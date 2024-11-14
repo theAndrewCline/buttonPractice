@@ -46,15 +46,15 @@ const switchColor = (/** @type {string} */ hex) => () => {
 };
 
 const createButton = (colorName, hex) => {
-  const btn = document.createElement("BUTTON");
+  let newBtn = document.createElement("button");
 
-  btn.id = colorName.toLowerCase();
-  btn.innerText = colorName;
-  btn.style.background = hex;
-  btn.onclick = switchColor(hex);
-  btn.classList = "btn";
+  newBtn.id = colorName.toLowerCase();
+  newBtn.innerText = colorName;
+  newBtn.style.background = hex;
+  newBtn.onclick = switchColor(hex);
+  newBtn.classList = "btn";
 
-  return btn;
+  return newBtn;
 };
 
 const buttons = [
