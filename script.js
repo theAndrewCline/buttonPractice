@@ -32,18 +32,6 @@ function rgbToHex(rgb) {
  * MAIN
  **/
 
-const createButton = (colorName, hex) => {
-  const btn = document.createElement("button");
-
-  btn.id = colorName.toLowerCase();
-  btn.innerText = colorName;
-  btn.style.background = hex;
-  btn.onclick = switchColor(hex);
-  btn.classList = "btn";
-
-  return btn;
-};
-
 const btnContainer = document.querySelector(".btn-cont");
 const background = document.querySelector(".background");
 
@@ -55,6 +43,18 @@ const switchColor = (/** @type {string} */ hex) => () => {
   } else {
     background.style.background = hex;
   }
+};
+
+const createButton = (colorName, hex) => {
+  const btn = document.createElement("BUTTON");
+
+  btn.id = colorName.toLowerCase();
+  btn.innerText = colorName;
+  btn.style.background = hex;
+  btn.onclick = switchColor(hex);
+  btn.classList = "btn";
+
+  return btn;
 };
 
 const buttons = [
