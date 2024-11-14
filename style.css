@@ -87,19 +87,6 @@ nav > ul > li > a:hover, nav > ul > .title:hover {
   background-color: #FFF;
   outline: none;
 }
-.btn-green {
-  background-color: #229954;
-}
-.btn-blue {
-  background-color: #2980B9;
-}
-.btn-yellow {
-  background-color: #F1C40F;
-}
-.btn-red {
-  background-color: #C0392B;
-}
-
 
 h1 {
   font-size: 70px;
